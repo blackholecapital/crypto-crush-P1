@@ -10,7 +10,8 @@
     "rule": "All public demo builds emit to dist/web-public at the repo root. No app may write build output outside this path. Only apps/web-public is a build target in P1."
   },
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "verify:build": "node scripts/verify-build.mjs"
   },
   "workspaces": [
     "apps/web-public"
