@@ -1,0 +1,64 @@
+:root {
+  color-scheme: dark;
+}
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 24px;
+  background: #0f1220;
+  color: #e8ebf7;
+}
+.shell-container {
+  max-width: 560px;
+  margin: 0 auto;
+}
+h1, h2 {
+  margin: 0 0 16px 0;
+}
+button {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 6px 6px 0 0;
+  background: #2d3459;
+  color: #e8ebf7;
+  border: 1px solid #444c7a;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+  background: #3a4270;
+}
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.level-card {
+  padding: 24px 12px;
+  text-align: center;
+}
+.actions {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+pre {
+  background: #1a1e35;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.shell-note {
+  font-size: 13px;
+  color: #9aa0c8;
+  margin-top: 8px;
+}
